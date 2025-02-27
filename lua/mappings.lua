@@ -17,7 +17,10 @@ map("i", "jk", "<ESC>")
 map("n", "<leader>ll", ":Lazy <CR>", { desc = "Open Lazy" })
 map("n", "<leader>ng", ":Neogit <CR>", { desc = "Open Neogit" })
 
---fzf-lua
+-- misc
+map("n", "<leader>cy", ":Calendar -view=year -week_number <CR>", { desc = "Display Yearly Calendar" })
+
+-- fzf-lua
 map("n", "<leader>fl", ":FzfLua <CR>", { desc = "Open fzf-lua commands list" })
 map("n", "<leader>fd", ":FzfLua files <CR>", { desc = "Open fzf-lua to find files" })
 map("n", "<leader>fv", ":FzfLua live_grep_native <CR>", { desc = "Grep by fzf-lua live grep native" })
