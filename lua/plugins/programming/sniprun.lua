@@ -22,6 +22,7 @@ local M = {
   -- (instead of fetching a binary from the github release). Requires Rust >= 1.65
   keys = {
     { "<leader>rs", "<cmd>SnipRun<cr>", desc = "SnipRun!" },
+    { "<leader>rv", mode = { "v" }, "<cmd>'<,'>SnipRun<cr>", desc = "SnipRun with selections!" },
   },
 }
 
