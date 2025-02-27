@@ -5,13 +5,17 @@ require "nvchad.mappings"
 local map = vim.keymap.set
 local nomap = vim.keymap.del
 
-nomap("n","<leader>x")
-nomap("i","<C-k>")
+nomap("n", "<leader>x")
+nomap("n", "<leader>n")
+nomap("i", "<C-k>")
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
+-- General
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+map("n", "<leader>ll", ":Lazy <CR>", { desc = "Open Lazy" })
+map("n", "<leader>ng", ":Neogit <CR>", { desc = "Open Neogit" })
 
 --fzf-lua
 map("n", "<leader>fl", ":FzfLua <CR>", { desc = "Open fzf-lua commands list" })
