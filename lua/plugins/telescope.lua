@@ -20,6 +20,7 @@ local M = {
     "nvim-telescope/telescope-live-grep-args.nvim",
     "tsakirist/telescope-lazy.nvim",
     "fdschmidt93/telescope-egrepify.nvim",
+    "polirritmico/telescope-lazy-plugins.nvim",
   },
   -- Shortcuts
   keys = {
@@ -70,6 +71,9 @@ function M.config()
           },
         },
       },
+      lazy_plugins = {
+        lazy_config = vim.fn.stdpath "data" .. "/lazy/lazy.nvim/lua/lazy/init.lua", -- Must be a valid path to the file containing the lazy spec and setup() call.
+      },
     },
   }
   -- load_extension, somewhere after setup function:
@@ -79,6 +83,7 @@ function M.config()
   telescope.load_extension "live_grep_args"
   telescope.load_extension "lazy"
   telescope.load_extension "egrepify"
+  telescope.load_extension "lazy_plugins"
 end
 
 return M
