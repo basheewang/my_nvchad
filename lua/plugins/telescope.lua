@@ -18,6 +18,8 @@ local M = {
       dependencies = { "nvim-lua/popup.nvim" },
     },
     "nvim-telescope/telescope-live-grep-args.nvim",
+    "tsakirist/telescope-lazy.nvim",
+    "fdschmidt93/telescope-egrepify.nvim",
   },
   -- Shortcuts
   keys = {
@@ -35,6 +37,13 @@ local M = {
         require("telescope").extensions.live_grep_args.live_grep_args()
       end,
       desc = "Telescope live grep with args",
+    },
+    {
+      "<leader>te",
+      function()
+        require("telescope").extensions.egrepify.egrepify()
+      end,
+      desc = "Telescope egrepify with args",
     },
   },
 }
@@ -68,6 +77,8 @@ function M.config()
   telescope.load_extension "fzf"
   telescope.load_extension "zoxide"
   telescope.load_extension "live_grep_args"
+  telescope.load_extension "lazy"
+  telescope.load_extension "egrepify"
 end
 
 return M
