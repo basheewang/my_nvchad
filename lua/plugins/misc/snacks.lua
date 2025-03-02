@@ -71,7 +71,7 @@ return {
     { "<leader>sC", function() Snacks.picker.commands() end, desc = "All Commands" },
     { "<leader>sd", function() Snacks.picker.diagnostics() end, desc = "Diagnostics" },
     { "<leader>sD", function() Snacks.picker.diagnostics_buffer() end, desc = "Buffer Diagnostics" },
-    { "<leader>se", function() Snacks.picker.help() end, desc = "Help Pages" },
+    { "<leader>sh", function() Snacks.picker.help() end, desc = "Help Pages" },
     { "<leader>sH", function() Snacks.picker.highlights() end, desc = "Highlights" },
     { "<leader>si", function() Snacks.picker.icons() end, desc = "Icons" },
     { "<leader>sj", function() Snacks.picker.jumps() end, desc = "Jumps" },
