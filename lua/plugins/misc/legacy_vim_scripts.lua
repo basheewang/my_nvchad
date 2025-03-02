@@ -15,4 +15,10 @@ return {
     "itchyny/calendar.vim",
     event = "VeryLazy",
   },
+
+  --🥪 An alternative sudo.vim for Vim and Neovim, limited support sudo in Windows
+  {
+    "lambdalisue/vim-suda",
+    lazy = false,
+  },
 }
