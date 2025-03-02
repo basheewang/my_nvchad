@@ -8,6 +8,14 @@ local servers = {
   -- "html",
   "cssls",
   "texlab",
+  -- "rust_analyzer",
+  -- "texlab",
+  -- "pyright",
+  -- "pyright", "clangd", "cmake",
+  -- "taplo",
+  -- "yamlls",
+  "neocmake",
+  "clangd",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 

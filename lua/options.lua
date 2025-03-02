@@ -8,8 +8,8 @@ o.relativenumber = true
 
 -- Load colorscheme
 vim.cmd.colorscheme "tokyonight"
-o.cursorline = true
-vim.api.nvim_set_hl(0, "CursorLine", { bg = "#3a5a3a" })
+-- o.cursorline = true
+-- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#3a5a3a" })
 
 -- diff setup.
 -- o.diffopt = "internal,filler,closeoff,linematch:60"

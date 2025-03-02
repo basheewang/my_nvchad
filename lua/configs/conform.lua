@@ -1,6 +1,16 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
+    -- rust = { "rustfmt" },
+    -- python = { "black" },
+    cpp = { "clang-format" },
+    c = { "clang-format" },
+    cmake = { "gersemi" },
+    tex = { "latexindent" },
+    -- json = { "jq" },
+    -- yaml = { "yamlfmt" },
+    zsh = { "beautysh" },
+    -- json = { "jq" },
     -- css = { "prettier" },
     -- html = { "prettier" },
   },
