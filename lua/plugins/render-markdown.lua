@@ -17,11 +17,11 @@ local M = {
 }
 
 -- This plugin provides completions for both checkboxes and callouts provided you follow the relevant setup.
-local cmp = require "cmp"
-cmp.setup {
-  sources = cmp.config.sources {
-    { name = "render-markdown" },
-  },
-}
+-- local cmp = require "cmp"
+-- cmp.setup {
+--   sources = cmp.config.sources {
+--     { name = "render-markdown" },
+--   },
+-- }
 
 return M
