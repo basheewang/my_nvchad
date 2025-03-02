@@ -7,6 +7,7 @@ local lspconfig = require "lspconfig"
 local servers = {
   -- "html",
   "cssls",
+  "texlab",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
