@@ -4,6 +4,7 @@ require "nvchad.options"
 
 local o = vim.o
 -- o.cursorlineopt ='both' -- to enable cursorline!
+o.cursorline = true
 o.relativenumber = true
 
 -- Load colorscheme
