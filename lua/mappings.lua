@@ -8,6 +8,7 @@ local nomap = vim.keymap.del
 nomap("n", "<leader>x")
 nomap("n", "<leader>n")
 nomap("n", "<leader>pt")
+nomap("n", "<leader>b")
 nomap("i", "<C-k>")
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
@@ -22,6 +23,7 @@ map("n", "<leader>ng", ":Neogit <CR>", { desc = "Open Neogit" })
 map("n", "<leader>cy", ":Calendar -view=year -week_number <CR>", { desc = "Display Yearly Calendar" })
 map("n", "<leader>yf", ':let @+=expand("%:p")<CR>', { desc = "Yank full path of current file" })
 map("n", "<leader>ys", ':echo expand("%:p")<CR>', { desc = "Show full path of current file" })
+map("n", "<leader>bb", "<cmd>enew<CR>", { desc = "buffer new" })
 
 -- fzf-lua
 map("n", "<leader>fl", ":FzfLua <CR>", { desc = "Open fzf-lua commands list" })
