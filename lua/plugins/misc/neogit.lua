@@ -7,7 +7,7 @@
 -- :Neogit cwd=%:p:h   " Uses the repository of the current file
 -- :Neogit kind=<kind> " Open specified popup directly
 -- :Neogit commit      " Open commit popup
-return {
+local M = {
   "NeogitOrg/neogit",
   event = "VeryLazy",
   dependencies = {
@@ -21,3 +21,5 @@ return {
   },
   config = true,
 }
+
+return M

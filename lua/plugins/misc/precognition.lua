@@ -1,5 +1,5 @@
 ---@type NvPluginSpec
----💭👀precognition.nvim - Precognition uses virtual text and gutter signs to show available motions.
+---💭👀 precognition.nvim - Precognition uses virtual text and gutter signs to show available motions.
 
 local M = {
   "tris203/precognition.nvim",

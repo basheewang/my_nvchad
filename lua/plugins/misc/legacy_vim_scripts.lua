@@ -1,6 +1,6 @@
 ---@type NvPluginSpec
 ---This is legacy plugins by vim script.
-return {
+local M = {
   -- An calendar app for vim(neovim)
   -- Basic Usage:
   -- :Calendar
@@ -28,3 +28,5 @@ return {
     lazy = false,
   },
 }
+
+return M

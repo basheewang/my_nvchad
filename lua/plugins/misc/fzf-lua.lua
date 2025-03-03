@@ -8,15 +8,17 @@
 --    :lua require('fzf-lua').files({ cwd = '~/.config' })
 -- or using the `FzfLua` vim command:
 --    :FzfLua files cwd=~/.config
-return {
+local M = {
   "ibhagwan/fzf-lua",
   event = "VeryLazy",
   -- optional for icon support
   -- dependencies = { "nvim-tree/nvim-web-devicons" },
   -- or if using mini.icons/mini.nvim
   dependencies = { "echasnovski/mini.icons" },
-  config = function()
-    -- calling `setup` is optional for customization
-    require("fzf-lua").setup {}
-  end,
 }
+
+function M.config()
+  require("fzf-lua").setup {}
+end
+
+return M

@@ -32,6 +32,7 @@ local M = {
     { "<leader>ld", "<cmd>Lspsaga hover_doc<cr>", desc = "Lspsaga Hover_doc" },
     -- { "<leader>lr", "<cmd>Lspsaga rename<cr>", desc = "Lspsaga rename" },
     { "<leader>lo", "<cmd>Lspsaga outline<cr>", desc = "Lspsaga outline" },
+    { "<leader>lt", "<cmd>Lspsaga term_toggle<cr>", desc = "Lspsaga term_toggle" },
   },
 }
 
