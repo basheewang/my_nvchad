@@ -27,6 +27,13 @@ local M = {
     "farmergreg/vim-lastplace",
     lazy = false,
   },
+
+  --Maximizes and restores the current window in Vim.
+  -- {
+  --   "szw/vim-maximizer",
+  --   lay = false,
+  --   cmd = "MaximizerToggle",
+  -- },
 }
 
 return M
