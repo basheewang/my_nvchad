@@ -17,6 +17,7 @@ map("i", "jk", "<ESC>")
 -- General
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 map("n", "<leader>ll", ":Lazy <CR>", { desc = "Open Lazy" })
+map("n", "<leader>lm", ":Mason <CR>", { desc = "Open Mason" })
 map("n", "<leader>ng", ":Neogit <CR>", { desc = "Open Neogit" })
 
 -- misc
