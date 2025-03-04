@@ -18,6 +18,10 @@ function M.config()
   require("lint").linters_by_ft = {
     lua = { "luacheck" },
     cpp = { "cpplint" },
+    json = { "jsonlint" },
+    text = { "vale" },
+    markdown = { "vale" },
+    latex = { "vale" },
   }
   require("mason-nvim-lint").setup {
     ignore_install = {
