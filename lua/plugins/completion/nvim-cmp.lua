@@ -16,9 +16,9 @@ local M = {
     -- "f3fora/cmp-spell",
     -- "hrsh7th/cmp-nvim-lsp-signature-help",
     "lukas-reineke/cmp-under-comparator",
-    -- "kdheepak/cmp-latex-symbols",
-    -- "micangl/cmp-vimtex",
-    -- "ray-x/cmp-treesitter",
+    "kdheepak/cmp-latex-symbols",
+    "micangl/cmp-vimtex",
+    "ray-x/cmp-treesitter",
     -- "DasGandlaf/nvim-autohotkey",
     -- "gbprod/yanky.nvim",
     -- "chrisgrieser/cmp_yanky",
@@ -57,10 +57,11 @@ function M.config()
 
   local compare = require "cmp.config.compare"
   local cmp = require "cmp"
+  local vimtex = require "cmp_vimtex"
   local MAX_ABBR_WIDTH = 30
   local MAX_MENU_WIDTH = 30
-  -- local config = cmp.get_config()
-  -- cmp.setup(config)
+
+  vimtex.setup {}
 
   cmp.setup {
     completion = {
@@ -162,6 +163,12 @@ function M.config()
       { name = "emoji", max_item_count = 5 },
       -- Lua plugin to turn github copilot into a cmp source
       { name = "copilot", group_index = 2 },
+      -- Add latex symbol support for nvim-cmp.
+      { name = "latex_symbols", max_item_count = 5 },
+      -- Vimtex source for nvim-cmp.
+      { name = "vimtex", max_item_count = 5 },
+      -- cmp source for treesitter
+      { name = "treesitter", max_item_count = 5 },
     },
   }
 
