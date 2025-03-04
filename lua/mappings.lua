@@ -9,6 +9,7 @@ nomap("n", "<leader>x")
 nomap("n", "<leader>n")
 nomap("n", "<leader>pt")
 nomap("n", "<leader>b")
+nomap("n", "<leader>ma")
 nomap("i", "<C-k>")
 
 map("n", ";", ":", { desc = "CMD enter command mode" })

@@ -9,10 +9,13 @@ local M = {
     "nvim-lua/plenary.nvim",
     "nvim-treesitter/nvim-treesitter",
   },
-  -- opts = {
-  --   -- Set debug logging
-  --   log_level = "DEBUG",
-  -- },
+  -- Key mappings for CodeCompanion plugin
+  -- <leader>mc: Toggle CodeCompanion Chat
+  -- <leader>ma: Open CodeCompanion Actions
+  keys = {
+    { "<leader>mc", "<cmd>CodeCompanionChat Toggle<cr>", desc = "CodeCompanion Chat" },
+    { "<leader>ma", "<cmd>CodeCompanionActions<cr>", desc = "CodeCompanion Actions" },
+  },
 }
 
 function M.config()
