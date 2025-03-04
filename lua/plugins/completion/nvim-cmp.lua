@@ -52,6 +52,7 @@ function M.config()
     Event = "",
     Operator = "󰆕",
     TypeParameter = "",
+    Copilot = "",
   }
 
   local compare = require "cmp.config.compare"
@@ -88,6 +89,7 @@ function M.config()
     sorting = {
       priority_weight = 1.0,
       comparators = {
+        require("copilot_cmp.comparators").prioritize,
         compare.offset,
         compare.exact,
         compare.score,
@@ -158,6 +160,8 @@ function M.config()
       { name = "lazydev" },
       --  type :smile, accept the suggestion from the popular menu, whitespace ahead!
       { name = "emoji", max_item_count = 5 },
+      -- Lua plugin to turn github copilot into a cmp source
+      { name = "copilot", group_index = 2 },
     },
   }
 
