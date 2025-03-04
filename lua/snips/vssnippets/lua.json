@@ -1,0 +1,11 @@
+{
+  "NvPlug": {
+    "prefix": [
+      "nvp"
+    ],
+    "body": [
+      "---@type NvPluginSpec"
+    ],
+    "description": "NvPluginSpec statement."
+  }
+}

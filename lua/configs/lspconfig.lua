@@ -16,6 +16,7 @@ local servers = {
   -- "yamlls",
   "neocmake",
   "clangd",
+  "jsonls",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
