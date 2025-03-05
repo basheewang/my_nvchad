@@ -13,7 +13,7 @@ local servers = {
   -- "pyright",
   -- "pyright", "clangd", "cmake",
   -- "taplo",
-  -- "yamlls",
+  "yamlls",
   "neocmake",
   "clangd",
   "jsonls",
