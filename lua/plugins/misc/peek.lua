@@ -5,6 +5,11 @@ local M = {
   "toppair/peek.nvim",
   event = { "VeryLazy" },
   build = "deno task --quiet build:fast",
+  -- stylua: ignore
+  keys={
+    {"<leader>po", function() require("peek").open() end, desc="Open Peek preview window"},
+    {"<leader>pc", function() require("peek").close() end, desc="Close Peek preview window"},
+  }
 }
 
 function M.config()
