@@ -17,6 +17,7 @@ local servers = {
   "neocmake",
   "clangd",
   "jsonls",
+  "marksman",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 

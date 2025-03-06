@@ -25,6 +25,7 @@ local M = {
   -- Shortcuts
   keys = {
     { "<leader>tf", "<cmd>Telescope frecency<cr>", desc = "Telescope frecency" },
+    { "<leader>tl", "<cmd>Telescope lazy_plugins<cr>", desc = "Telescope lazy_plugins config grep" },
     {
       "<leader>tz",
       function()
@@ -33,7 +34,7 @@ local M = {
       desc = "Telescope zoxide",
     },
     {
-      "<leader>tl",
+      "<leader>tg",
       function()
         require("telescope").extensions.live_grep_args.live_grep_args()
       end,
