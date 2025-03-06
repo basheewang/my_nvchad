@@ -8,7 +8,12 @@ return {
   ---@type snacks.Config
   opts = {
     bigfile = { enabled = true },
-    dashboard = { enabled = true },
+    dashboard = {
+      enabled = true,
+      -- preset = {
+      --   header = require("ascii").art.animals.dogs.lucky,
+      -- },
+    },
     explorer = { enabled = true },
     image = { enabled = true },
     indent = { enabled = true },

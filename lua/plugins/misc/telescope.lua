@@ -85,6 +85,7 @@ function M.config()
   telescope.load_extension "lazy"
   telescope.load_extension "egrepify"
   telescope.load_extension "lazy_plugins"
+  telescope.load_extension "ascii"
 end
 
 return M
