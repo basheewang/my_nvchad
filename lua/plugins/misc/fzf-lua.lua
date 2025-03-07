@@ -15,6 +15,11 @@ local M = {
   -- dependencies = { "nvim-tree/nvim-web-devicons" },
   -- or if using mini.icons/mini.nvim
   dependencies = { "echasnovski/mini.icons" },
+  --stylua: ignore
+  keys={
+    {"<leader>fg", function() require("fzf-lua").live_grep_native({cwd=vim.fn.stdpath('config')}) end, desc = "Grep Config Files"},
+  }
+,
 }
 
 function M.config()
