@@ -1,11 +1,16 @@
 {
+  "funckey": {
+    "body": "{\"<leader>${1:}\", function() require(\"${2:}\").${3:} end, desc = \"${4:}\"},$0",
+    "prefix": "funckey"
+  },
   "NvPlug": {
+    "description": "NvPluginSpec statement.",
     "prefix": [
       "nvp"
     ],
     "body": [
       "---@type NvPluginSpec"
-    ],
-    "description": "NvPluginSpec statement."
+    ]
   }
 }
+
