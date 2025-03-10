@@ -67,6 +67,11 @@ function M.config()
     completion = {
       completeopt = "menu,menuone,preview,noselect",
     },
+    -- improve your experience in nvim-cmp
+    performance = {
+      debounce = 0, -- default is 60ms
+      throttle = 0, -- default is 30ms
+    },
 
     formatting = {
       expandable_indicator = true,
@@ -124,6 +129,7 @@ function M.config()
       ["<C-f>"] = cmp.mapping.scroll_docs(4),
       ["<C-Space>"] = cmp.mapping.complete(),
       ["<C-e>"] = cmp.mapping.close(),
+      ["<C-q>"] = cmp.mapping.abort(),
 
       ["<CR>"] = cmp.mapping.confirm {
         behavior = cmp.ConfirmBehavior.Insert,
@@ -154,7 +160,7 @@ function M.config()
     sources = {
       { name = "nvim_lsp", max_item_count = 5 },
       { name = "luasnip", max_item_count = 5 },
-      { name = "buffer", max_item_count = 5 },
+      { name = "buffer", group_index = 1, option = { max_item_count = 5 } },
       { name = "nvim_lua", max_item_count = 5 },
       { name = "path", max_item_count = 5 },
       -- default above, and customize below
