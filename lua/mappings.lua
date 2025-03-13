@@ -16,6 +16,7 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
 -- General
+map("n", "<leader>bs", ":setlocal spell spelllang=en <CR>", { desc = "Enable spell for buffer" })
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 map("n", "<leader>ll", ":Lazy <CR>", { desc = "Open Lazy" })
 map("n", "<leader>lm", ":Mason <CR>", { desc = "Open Mason" })
