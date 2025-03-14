@@ -5,6 +5,8 @@ require "nvchad.options"
 local o = vim.o
 -- o.cursorlineopt ='both' -- to enable cursorline!
 o.relativenumber = true
+-- o.ruler = true
+-- o.rulerformat = "%l,%c/%P"
 
 -- Load colorscheme
 -- vim.cmd.colorscheme "tokyonight"
