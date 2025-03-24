@@ -5,12 +5,9 @@
   },
   "NvPlug": {
     "description": "NvPluginSpec statement.",
-    "prefix": [
-      "nvp"
-    ],
+    "prefix": "nvp",
     "body": [
       "---@type NvPluginSpec"
     ]
   }
 }
-
