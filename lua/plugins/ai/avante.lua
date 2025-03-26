@@ -51,7 +51,11 @@ local M = {
   opts = {
     -- add any opts here,default is claude.
     -- for example
-    provider = "gemini",
+    -- ---@alias Provider "claude" | "openai" | "azure" | "gemini" | "cohere" | "copilot" | string
+    provider = "copilot",
+    -- copilot = {
+    --   model = "claude-3.5-sonnet",
+    -- },
     -- openai = {
     --   endpoint = "https://api.openai.com/v1",
     --   model = "gpt-4o", -- your desired model (or use gpt-4o, etc.)

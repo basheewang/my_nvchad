@@ -53,6 +53,7 @@ function M.config()
     Operator = "󰆕",
     TypeParameter = "",
     Copilot = "",
+    Supermaven = "",
   }
 
   local compare = require "cmp.config.compare"
@@ -175,6 +176,8 @@ function M.config()
       { name = "vimtex", max_item_count = 5 },
       -- cmp source for treesitter
       { name = "treesitter", max_item_count = 5 },
+      -- supermaven
+      { name = "supermaven", max_item_count = 5 },
     },
   }
 
