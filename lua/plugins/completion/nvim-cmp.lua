@@ -169,7 +169,7 @@ function M.config()
       --  type :smile, accept the suggestion from the popular menu, whitespace ahead!
       { name = "emoji", max_item_count = 5 },
       -- Lua plugin to turn github copilot into a cmp source
-      { name = "copilot", group_index = 2 },
+      { name = "copilot", max_item_count = 5 },
       -- Add latex symbol support for nvim-cmp.
       { name = "latex_symbols", max_item_count = 5 },
       -- Vimtex source for nvim-cmp.
