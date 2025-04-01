@@ -11,6 +11,7 @@ function M.config()
   require("mini.ai").setup {
     -- Add your configuration here
   }
+  require("mini.sessions").setup {}
 end
 
 return M

@@ -9,8 +9,8 @@ o.relativenumber = true
 -- o.rulerformat = "%l,%c/%P"
 
 -- Load colorscheme
--- vim.cmd.colorscheme "tokyonight"
-vim.cmd.colorscheme "kanagawa-paper"
+vim.cmd.colorscheme "tokyonight"
+-- vim.cmd.colorscheme "kanagawa-paper"
 -- o.cursorline = true
 -- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#3a5a3a" })
 

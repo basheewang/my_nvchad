@@ -16,10 +16,22 @@ M.base46 = {
 }
 
 -- M.nvdash = { load_on_startup = true }
--- M.ui = {
---       tabufline = {
---          lazyload = false
---      }
---}
+M.ui = {
+  statusline = {
+    theme = "default", -- default/vscode/vscode_colored/minimal
+    -- default/round/block/arrow separators work only for default statusline theme
+    -- round and block will work for minimal theme only
+    separator_style = "round",
+    -- order = nil,
+    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor", "g", "f" },
+    modules = {
+      g = "[" .. "%p" .. "%%] ", --Percentage through file in lines as in |CTRL-G|.
+      f = "%F", --Full path to the file in the buffer.
+    },
+  },
+  --  tabufline = {
+  --     lazyload = false
+  -- }
+}
 
 return M
