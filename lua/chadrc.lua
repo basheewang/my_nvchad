@@ -23,7 +23,7 @@ M.ui = {
     -- round and block will work for minimal theme only
     separator_style = "round",
     -- order = nil,
-    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor", "g", "f" },
+    order = { "mode", "file", "git", "%=", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor", "g" },
     modules = {
       g = "[" .. "%p" .. "%%] ", --Percentage through file in lines as in |CTRL-G|.
       f = "%F", --Full path to the file in the buffer.
