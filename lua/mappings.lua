@@ -15,6 +15,9 @@ nomap("i", "<C-k>")
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
+-- Duplicate line and comment the first line. I use it all the time while coding.
+map("n", "ycc", "yygccp", { remap = true })
+
 -- General
 map("n", "<leader>bs", ":setlocal spell spelllang=en <CR>", { desc = "Enable spell for buffer" })
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
