@@ -52,10 +52,21 @@ local M = {
     -- add any opts here,default is claude.
     -- for example
     -- ---@alias Provider "claude" | "openai" | "azure" | "gemini" | "cohere" | "copilot" | string
-    provider = "copilot",
+    -- provider = "copilot",
     -- copilot = {
     --   model = "claude-3.5-sonnet",
     -- },
+    provider = "deepseek",
+    vendors = {
+      deepseek = {
+        __inherited_from = "openai",
+        api_key_name = "DEEPSEEK_API_KEY",
+        endpoint = "https://api.deepseek.com",
+        model = "deepseek-chat",
+        -- model = "deepseek-code",
+        -- model = "deepseek-reasoner",
+      },
+    },
     -- openai = {
     --   endpoint = "https://api.openai.com/v1",
     --   model = "gpt-4o", -- your desired model (or use gpt-4o, etc.)
