@@ -3,7 +3,8 @@
 
 local M = {
   "milanglacier/yarepl.nvim",
-  event = "InsertEnter",
+  -- event = "InsertEnter",
+  event = "VeryLazy",
   keys = {
     -- Pickers
     { "<leader>yr", "<Plug>(REPLStart)", desc = "Start a repl windows" },

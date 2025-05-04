@@ -56,15 +56,38 @@ local M = {
     -- copilot = {
     --   model = "claude-3.5-sonnet",
     -- },
+    -- gemini = {
+    -- model = "gemini-2.5-flash-preview-04-17",
+    -- },
     provider = "deepseek",
     vendors = {
+      deepseekreasoner = {
+        __inherited_from = "openai",
+        api_key_name = "DEEPSEEK_API_KEY",
+        endpoint = "https://api.deepseek.com",
+        model = "deepseek-reasoner",
+      },
       deepseek = {
         __inherited_from = "openai",
         api_key_name = "DEEPSEEK_API_KEY",
         endpoint = "https://api.deepseek.com",
         model = "deepseek-chat",
         -- model = "deepseek-code",
-        -- model = "deepseek-reasoner",
+      },
+      xai = {
+        __inherited_from = "openai",
+        api_key_name = "XAI_API_KEY",
+        endpoint = "https://api.x.ai/v1",
+        model = "grok-3-beta",
+        -- model = "deepseek-code",
+      },
+      gemini25flash = {
+        __inherited_from = "gemini",
+        model = "gemini-2.5-flash-preview-04-17",
+      },
+      gemini25pro = {
+        __inherited_from = "gemini",
+        model = "gemini-2.5-pro-exp-03-25",
       },
     },
     -- openai = {
