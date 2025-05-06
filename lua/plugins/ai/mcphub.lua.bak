@@ -9,7 +9,7 @@ local M = {
   },
   -- branch = "nightly",
   cmd = "MCPHub", -- lazily start the hub when `MCPHub` is called
-  build = "npm install -g mcp-hub@latest", -- Installs globally
+  -- build = "npm install -g mcp-hub@latest", -- Installs globally
   -- build = "bundled_build.lua", -- Installs required mcp-hub npm module
 }
 

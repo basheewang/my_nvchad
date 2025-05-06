@@ -98,6 +98,17 @@ local M = {
     --   max_tokens = 4096,
     -- reasoning_effort = "high" -- only supported for reasoning models (o1, etc.)
     -- },
+    -- To enable MCPHub.
+    -- system_prompt = function()
+    --   local hub = require("mcphub").get_hub_instance()
+    --   ---@diagnostic disable-next-line: need-check-nil
+    --   return hub:get_active_servers_prompt()
+    -- end,
+    -- custom_tools = function()
+    --   return {
+    --     require("mcphub.extensions.avante").mcp_tool(),
+    --   }
+    -- end,
   },
 }
 
