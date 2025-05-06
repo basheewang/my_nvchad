@@ -3,34 +3,59 @@
 
 local M = {
   "ravitemer/mcphub.nvim",
-  event = "VeryLazy",
+  -- lazy = false,
   dependencies = {
     "nvim-lua/plenary.nvim", -- Required for Job and HTTP requests
   },
-  branch = "nightly",
-  -- cmd = "MCPHub", -- lazily start the hub when `MCPHub` is called
-  build = "bundled_build.lua", -- Installs required mcp-hub npm module
+  -- branch = "nightly",
+  cmd = "MCPHub", -- lazily start the hub when `MCPHub` is called
+  build = "npm install -g mcp-hub@latest", -- Installs globally
+  -- build = "bundled_build.lua", -- Installs required mcp-hub npm module
 }
 
 function M.config()
   require("mcphub").setup {
-    -- Required options
-    port = 3000, -- Port for MCP Hub server
+    -- Server configuration
+    -- use_bundled_binary = true, -- Use local binary
+    port = 37300, -- Port for MCP Hub Express API
+    -- config = vim.fn.expand "~/.config/mcphub/servers.json", -- Config file path
     config = vim.fn.expand(vim.fn.stdpath "config" .. "/lua/plugins/ai/mcpservers.json"), -- Absolute path to config file
 
-    use_bundled_binary = true,
-    -- Optional options
-    on_ready = function(hub)
-      -- Called when hub is ready
-    end,
-    on_error = function(err)
-      -- Called on errors
-    end,
+    native_servers = {}, -- add your native servers here
+    -- Extension configurations
+    auto_approve = false,
+    extensions = {
+      avante = {
+        make_slash_commands = true,
+      },
+      codecompanion = {
+        show_result_in_chat = true, -- Show tool results in chat
+        make_vars = true, -- Create chat variables from resources
+        make_slash_commands = true, -- make /slash_commands from MCP server prompts
+      },
+    },
+
+    -- UI configuration
+    ui = {
+      window = {
+        width = 0.8, -- Window width (0-1 ratio)
+        height = 0.8, -- Window height (0-1 ratio)
+        border = "rounded", -- Window border style
+        relative = "editor", -- Window positioning
+        zindex = 50, -- Window stack order
+      },
+    },
+
+    -- Event callbacks
+    on_ready = function(hub) end, -- Called when hub is ready
+    on_error = function(err) end, -- Called on errors
+
+    -- Logging configuration
     log = {
-      level = vim.log.levels.WARN,
-      to_file = false,
-      file_path = nil,
-      prefix = "MCPHub",
+      level = vim.log.levels.INFO, -- Minimum log level
+      to_file = false, -- Enable file logging
+      file_path = nil, -- Custom log file path
+      prefix = "MCPHub", -- Log message prefix
     },
   }
 end
