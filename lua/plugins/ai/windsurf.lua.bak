@@ -1,0 +1,18 @@
+---@type NvPluginSpec
+--- A native neovim extension for Codeium
+--- Still not wotking with proxy environment!
+
+local M = {
+  "Exafunction/windsurf.nvim",
+  event = "LSPAttach",
+  dependencies = {
+    "nvim-lua/plenary.nvim",
+    "hrsh7th/nvim-cmp",
+  },
+}
+
+function M.config()
+  require("codeium").setup {}
+end
+
+return M

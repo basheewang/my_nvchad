@@ -54,6 +54,7 @@ function M.config()
     TypeParameter = "",
     Copilot = "",
     Supermaven = "",
+    -- Codeium = "",
   }
 
   local compare = require "cmp.config.compare"
@@ -178,6 +179,8 @@ function M.config()
       { name = "treesitter", max_item_count = 5 },
       -- supermaven
       { name = "supermaven", max_item_count = 5 },
+      -- Codeium
+      -- { name = "codeium", max_item_count = 5 },
     },
   }
 
