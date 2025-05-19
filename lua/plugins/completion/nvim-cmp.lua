@@ -54,7 +54,19 @@ function M.config()
     TypeParameter = "",
     Copilot = "",
     Supermaven = "",
+    minuet = "󱗻",
     -- Codeium = "",
+    claude = "󰋦",
+    openai = "󱢆",
+    -- codestral = '󱎥',
+    gemini = "",
+    Groq = "",
+    Openrouter = "󱂇",
+    -- Ollama = '󰳆',
+    -- ['Llama.cpp'] = '󰳆',
+    -- Deepseek = ''
+    -- FALLBACK
+    fallback = "",
   }
 
   local compare = require "cmp.config.compare"
@@ -73,6 +85,11 @@ function M.config()
     performance = {
       debounce = 0, -- default is 60ms
       throttle = 0, -- default is 30ms
+      -- It is recommended to increase the timeout duration due to
+      -- the typically slower response speed of LLMs compared to
+      -- other completion sources. This is not needed when you only
+      -- need manual completion.
+      fetching_timeout = 2000,
     },
 
     formatting = {
@@ -179,6 +196,8 @@ function M.config()
       { name = "treesitter", max_item_count = 5 },
       -- supermaven
       { name = "supermaven", max_item_count = 5 },
+      -- Minuet
+      { name = "minuet", max_item_count = 5 },
       -- Codeium
       -- { name = "codeium", max_item_count = 5 },
     },

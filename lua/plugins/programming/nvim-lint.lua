@@ -22,6 +22,7 @@ function M.config()
     text = { "vale" },
     markdown = { "vale" },
     latex = { "vale" },
+    python = { "flake8" },
   }
   require("mason-nvim-lint").setup {
     ignore_install = {
