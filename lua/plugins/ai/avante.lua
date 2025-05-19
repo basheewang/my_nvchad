@@ -59,8 +59,17 @@ local M = {
     -- gemini = {
     -- model = "gemini-2.5-flash-preview-04-17",
     -- },
+    -- provider = "openrouter",
     provider = "deepseek",
     vendors = {
+      openrouter = {
+        __inherited_from = "openai",
+        endpoint = "https://openrouter.ai/api/v1",
+        api_key_name = "OPENROUTER_API_KEY",
+        -- model = "deepseek/deepseek-r1",
+        -- model = "openai/gpt-4o-mini",
+        model = "anthropic/claude-3.7-sonnet",
+      },
       deepseekreasoner = {
         __inherited_from = "openai",
         api_key_name = "DEEPSEEK_API_KEY",
