@@ -3,6 +3,8 @@ require "nvchad.options"
 -- add yours here!
 
 local o = vim.o
+local g = vim.g
+
 -- o.cursorlineopt ='both' -- to enable cursorline!
 o.relativenumber = true
 -- o.ruler = true
@@ -25,3 +27,6 @@ o.foldcolumn = "1" -- '0' is not bad
 o.foldlevel = 99 -- Using ufo provider need a large value, feel free to decrease the value
 o.foldlevelstart = 99
 o.foldenable = true
+
+g.loaded_python3_provider = nil
+g.python3_host_prog = "/home/coeus/myproj/python/venv/bin/python3"

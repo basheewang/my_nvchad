@@ -62,13 +62,32 @@ local M = {
     -- provider = "openrouter",
     provider = "deepseek",
     vendors = {
-      openrouter = {
+      openrouter_anthropic_claude_3_7_sonnet = {
         __inherited_from = "openai",
         endpoint = "https://openrouter.ai/api/v1",
         api_key_name = "OPENROUTER_API_KEY",
         -- model = "deepseek/deepseek-r1",
         -- model = "openai/gpt-4o-mini",
         model = "anthropic/claude-3.7-sonnet",
+        -- model = "anthropic/claude-sonnet-4",
+      },
+      openrouter_anthropic_claude_4_0_sonnet = {
+        __inherited_from = "openai",
+        endpoint = "https://openrouter.ai/api/v1",
+        api_key_name = "OPENROUTER_API_KEY",
+        -- model = "deepseek/deepseek-r1",
+        -- model = "openai/gpt-4o-mini",
+        -- model = "anthropic/claude-3.7-sonnet",
+        model = "anthropic/claude-sonnet-4",
+      },
+      openrouter_openai_gpt_4o_mini = {
+        __inherited_from = "openai",
+        endpoint = "https://openrouter.ai/api/v1",
+        api_key_name = "OPENROUTER_API_KEY",
+        -- model = "deepseek/deepseek-r1",
+        model = "openai/gpt-4o-mini",
+        -- model = "anthropic/claude-3.7-sonnet",
+        -- model = "anthropic/claude-sonnet-4",
       },
       deepseekreasoner = {
         __inherited_from = "openai",
@@ -92,11 +111,13 @@ local M = {
       },
       gemini25flash = {
         __inherited_from = "gemini",
-        model = "gemini-2.5-flash-preview-04-17",
+        model = "gemini-2.5-flash-preview-05-20",
       },
       gemini25pro = {
         __inherited_from = "gemini",
         model = "gemini-2.5-pro-exp-03-25",
+        -- model = "gemini-2.5-pro-exp-05-06",
+        -- model = "gemini-1.5-pro-latest",
       },
     },
     -- openai = {
