@@ -61,7 +61,7 @@ local M = {
     -- },
     -- provider = "openrouter",
     provider = "deepseek",
-    vendors = {
+    providers = {
       openrouter_anthropic_claude_3_7_sonnet = {
         __inherited_from = "openai",
         endpoint = "https://openrouter.ai/api/v1",
