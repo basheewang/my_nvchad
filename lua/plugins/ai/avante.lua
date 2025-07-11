@@ -123,15 +123,17 @@ local M = {
         model = "grok-3",
         -- model = "deepseek-code",
       },
+      gemini25flashlite = {
+        __inherited_from = "gemini",
+        model = "gemini-2.5-flash-lite-preview-06-17",
+      },
       gemini25flash = {
         __inherited_from = "gemini",
-        model = "gemini-2.5-flash-preview-05-20",
+        model = "gemini-2.5-flash",
       },
       gemini25pro = {
         __inherited_from = "gemini",
-        model = "gemini-2.5-pro-exp-03-25",
-        -- model = "gemini-2.5-pro-exp-05-06",
-        -- model = "gemini-1.5-pro-latest",
+        model = "gemini-2.5-pro",
       },
     },
     -- openai = {
