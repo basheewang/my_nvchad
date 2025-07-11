@@ -102,11 +102,25 @@ local M = {
         model = "deepseek-chat",
         -- model = "deepseek-code",
       },
-      xai = {
+      xaigrok4 = {
         __inherited_from = "openai",
         api_key_name = "XAI_API_KEY",
         endpoint = "https://api.x.ai/v1",
-        model = "grok-3-beta",
+        model = "grok-4-0709",
+        -- model = "deepseek-code",
+      },
+      xaigrok3mini = {
+        __inherited_from = "openai",
+        api_key_name = "XAI_API_KEY",
+        endpoint = "https://api.x.ai/v1",
+        model = "grok-3-mini",
+        -- model = "deepseek-code",
+      },
+      xaigrok3 = {
+        __inherited_from = "openai",
+        api_key_name = "XAI_API_KEY",
+        endpoint = "https://api.x.ai/v1",
+        model = "grok-3",
         -- model = "deepseek-code",
       },
       gemini25flash = {
