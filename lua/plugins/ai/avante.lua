@@ -106,7 +106,7 @@ local M = {
         __inherited_from = "openai",
         api_key_name = "XAI_API_KEY",
         endpoint = "https://api.x.ai/v1",
-        model = "grok-4-0709",
+        model = "grok-4",
         -- model = "deepseek-code",
       },
       xaigrok3mini = {
