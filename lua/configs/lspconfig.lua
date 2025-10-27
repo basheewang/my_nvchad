@@ -18,6 +18,7 @@ local servers = {
   "clangd",
   "jsonls",
   "marksman",
+  "bashls",
 }
 local nvlsp = require "nvchad.configs.lspconfig"
 
