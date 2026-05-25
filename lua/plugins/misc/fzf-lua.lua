@@ -24,6 +24,8 @@ local M = {
 
 function M.config()
   require("fzf-lua").setup {}
+  -- Use skim (or a speccific fzf binary/version) instead of fzf?
+  -- fzf_bin = 'sk',
 end
 
 return M

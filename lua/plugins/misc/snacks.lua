@@ -52,7 +52,7 @@ return {
       timeout = 3000,
       top_down = false,
     },
-    picker = { enabled = true },
+    picker = { enabled = true }, -- use <a-i> to toggle gitignore and use <a-h> to toggle hidden files.
     profiler = { enabled = true },
     quickfile = { enabled = true },
     scope = { enabled = true },
