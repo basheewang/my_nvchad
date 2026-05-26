@@ -29,4 +29,7 @@ o.foldlevelstart = 99
 o.foldenable = true
 
 g.loaded_python3_provider = nil
-g.python3_host_prog = "/home/coeus/myproj/python/venv/bin/python3"
+-- g.python3_host_prog = "/home/coeus/myproj/python/venv/bin/python3"
+
+-- load builtin plugins
+vim.cmd "packadd nvim.undotree"
