@@ -7,10 +7,10 @@ local M = {
   dependencies = {
     "nvim-lua/plenary.nvim",
     -- Sorter
-    {
-      "nvim-telescope/telescope-fzf-native.nvim",
-      build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
-    },
+    -- {
+    --   "nvim-telescope/telescope-fzf-native.nvim",
+    --   build = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release",
+    -- },
     -- Extensions:
     "nvim-telescope/telescope-frecency.nvim",
     {
@@ -79,7 +79,7 @@ function M.config()
   }
   -- load_extension, somewhere after setup function:
   telescope.load_extension "frecency"
-  telescope.load_extension "fzf"
+  -- telescope.load_extension "fzf"
   telescope.load_extension "zoxide"
   telescope.load_extension "live_grep_args"
   telescope.load_extension "lazy"
