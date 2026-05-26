@@ -30,3 +30,6 @@ o.foldenable = true
 
 g.loaded_python3_provider = nil
 g.python3_host_prog = "/home/coeus/myproj/python/venv/bin/python3"
+
+-- enable builtin undotree package
+vim.cmd "packadd nvim.undotree"

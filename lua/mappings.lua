@@ -20,6 +20,8 @@ map("n", "ycc", "yygccp", { remap = true })
 
 -- General
 map("n", "<leader>bs", ":setlocal spell spelllang=en <CR>", { desc = "Enable spell for buffer" })
+-- set shortcut to builtin undotree package
+map("n", "<leader>uu", ":Undotree <CR>", { desc = "Open undotree" })
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 map("n", "<leader>ll", ":Lazy <CR>", { desc = "Open Lazy" })
 map("n", "<leader>lm", ":Mason <CR>", { desc = "Open Mason" })
