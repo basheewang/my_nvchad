@@ -2,6 +2,10 @@ require "nvchad.options"
 
 -- add yours here!
 
+-- to avoid to use cl.exe to compile treesitter files.
+vim.env.CC = "gcc"
+vim.env.CXX = "g++"
+
 local o = vim.o
 local g = vim.g
 
