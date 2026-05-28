@@ -1,0 +1,28 @@
+---@type NvPluginSpec
+---Describe the regexp under the cursor
+---nvim-regexplainer requires the regex treesitter parser, as well as the parser for the host language.
+-- Supported languages:
+-- JavaScript (and TypeScript)
+-- HTML
+-- Ruby
+-- Python
+-- Go
+-- Rust
+-- PHP
+-- Java
+-- C#
+-- Run :checkhealth regexplainer to verify your treesitter setup.
+
+local M = {
+  "bennypowers/nvim-regexplainer",
+  event = "VeryLazy",
+  dependencies = {
+    "edluffy/hologram.nvim", -- OPTIONAL: for git status
+  },
+  opts = {},
+  -- keys = {
+  --   { "<a-p>", "<cmd>BufferPick<cr>", desc = "Pick a buffer" },
+  -- },
+}
+
+return M
