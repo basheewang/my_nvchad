@@ -16,7 +16,6 @@ local M = {
     },
     keys = {
       {
-        "n",
         "<leader>ms",
         function()
           require("snacks-fff").find_files()
@@ -24,12 +23,11 @@ local M = {
         desc = "FFFind files with Snacks",
       },
       {
-        "n",
         "<leader>mt",
         function()
           require("snacks-fff").live_grep()
         end,
-        { desc = "Live grep with Snacks" },
+        desc = "Live grep with Snacks",
       },
     },
   },
